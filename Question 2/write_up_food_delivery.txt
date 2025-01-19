@@ -1,0 +1,25 @@
+Normalization Process:
+The database is normalized to 3NF to eliminate redundancy. 
+Each table represents a single entity or relationship, 
+and data is stored with minimal duplication. 
+For example: The Dish table contains only information about dishes, not tied to specific orders.
+The Order table references User, Restaurant through foreign keys.
+
+Denormalization Justification:
+The Order table contains a Delivery_Address field instead of linking 
+it to a separate address table. This is for simplicity and to improve query performance 
+since most orders will have unique addresses.
+
+Phone Numbers as Strings:
+Storing phone numbers as VARCHAR prevents loss of leading zeroes and supports country codes. 
+However, it makes numeric operations (e.g., finding ranges) harder. 
+
+Constraints:
+Unique constraints ensure no duplicate users, dishes, or orders. 
+Foreign keys maintain relationships and data integrity. Constraints like NOT NULL enforce required fields.
+
+Data types like DECIMAL for prices and ratings ensure precise values. 
+
+Indexes for Performance:
+Primary keys and foreign keys are indexed automatically, 
+ensuring efficient querying for relationships like User and Order or Order and Payment.
