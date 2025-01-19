@@ -1,7 +1,0 @@
-I only did optimization for the 5th query as it was the only one which was taking a lot of time 
-for execution. So, the query involves a sum operation on the price which is grouped by flight_id
-and eventually by airline_id. It was performing a full table scan on booking, so I just tried if 
-indexing based on flight_id and price reduces the time taken for the query to execute since I thought 
-it would be more efficient. Initially, even after 10-15 minutes, it was not giving any output, but 
-after indexing, it worked in less than 2 minutes. It helped in reducing the execution time. I referred 
-to this gfg article to understand indexing more: https://www.geeksforgeeks.org/sql-create-index/
