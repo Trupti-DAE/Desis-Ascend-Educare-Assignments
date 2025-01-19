@@ -1,0 +1,13 @@
+Normalization:
+Most tables have been normalized to 3rd Normal Form (3NF).
+Redundant data has been eliminated by creating relationships using foreign keys. 
+For example, the Trips table references Buses and Routes instead of duplicating their data. 
+Fields like Stops in the Routes table remain denormalized (stored as text) 
+to simplify queries involving route descriptions.
+
+Denormalization:
+I storedd the Stops attribute in the Routes table as a single field instead 
+of a separate table to reduce query complexity and improve performance for route-based queries. 
+
+I added constraints like CHECK, NOT NULL, and UNIQUE ensure data integrity and validity 
+at the database level.
