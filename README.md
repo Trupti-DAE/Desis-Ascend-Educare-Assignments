@@ -1,6 +1,9 @@
 # Desis-Ascend-Educare-Assignments
 Contains code and details about the assignments being done as a part of the program.
 
+## Assignment 3
+All the details about each question is in respective questions' directory(Question 1, Question2, question3) 
+
 ## Assignment 2
 Create a realtime chat system by making use of Sockets. The task for this assignment is to create a multi-user realtime chatting system using Sockets. The server and client will be talking to each other in real time for an infinite period until one of them is closed (by pressing Ctrl+C on the terminal). However, it is possible for one user to talk to multiple users (in DMs only, no group chats for now!) Also, all the chat messages from the server and client should be labeled and stored into a file for historical reference. Extra points if you make use of STL APIs like vectors, strings etc. Bigger props if you manage to use threads for saving data!
 
